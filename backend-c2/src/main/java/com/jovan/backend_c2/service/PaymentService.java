@@ -21,6 +21,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class PaymentService {
 
+	@Value("${stripe.secret.key}")
 	private String stripeApiKey;
 
 	private final UserRepository userRepository;
